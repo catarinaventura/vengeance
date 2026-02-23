@@ -1,0 +1,381 @@
+/* --------------------------------------------------------------------
+FONT
+-------------------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* --------------------------------------------------------------------
+BODY
+-------------------------------------------------------------------- */
+body {
+  background-color: black;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  overflow-x: hidden;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+main {
+  width: 100%;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+/* --------------------------------------------------------------------
+CABEÇALHO
+-------------------------------------------------------------------- */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+}
+
+#logo {
+  margin-right: 20px;
+  width: 50px;
+}
+
+.cabeçalho {
+  background-color: maroon;
+  padding: 10px 20px;
+  box-shadow: 0 1px 7px #484948;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  position: relative;
+}
+
+.menu {
+  float: left;
+  white-space: nowrap;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.menu a {
+  transition: all 0.3s ease;
+  padding: 5px 10px;
+  font-size: 1rem;
+  color: #BDB7AB;
+}
+
+.menu a:hover {
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  transform: scale(1.05);
+}
+
+
+.nav-icons {
+  display: flex;
+  flex-direction: row;
+  float: right;
+  gap: 15px;
+}
+
+.nav-icons .nav-link {
+  color: #BDB7AB;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.nav-icons .nav-link:hover {
+  color: white;
+  text-decoration: none;
+  transform: scale(1.05);
+}
+
+.links {
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border-radius: 20px;
+  padding: 2px;
+}
+
+.links:hover {
+  background-color: #BDB7AB;
+  color: maroon;
+}
+
+.highlights_with_link {
+  color: #BDB7AB;
+}
+
+/* --------------------------------------------------------------------
+CONTEUDO GERAL
+-------------------------------------------------------------------- */
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 50%;
+}
+
+.section-titulo, .contact-section {
+  box-shadow: 1px 1px 7px #484948;
+  background-color: rgba(128, 0, 0, 0.5);
+  padding: 10px;
+  color: white;
+}
+
+.section-content {
+  box-shadow: 1px 1px 7px #484948;
+  background-color: rgba(128, 0, 0, 0.5);
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+}
+
+.contact-section {
+  width: 70%;
+  max-width: 500px;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#diff {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+/* --------------------------------------------------------------------
+BOTÕES
+-------------------------------------------------------------------- */
+.botao-geral {
+  background-color: #BDB7AB;
+  color: black;
+  border: none;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.botao-geral:hover {
+  background-color: #8B0000;
+  color: white;
+  transform: scale(1.05);
+}
+
+.botao-apagar {
+  background-color: #8B0000;
+  color: white;
+  border: none;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.botao-apagar:hover {
+  background-color: black;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* --------------------------------------------------------------------
+HOME
+-------------------------------------------------------------------- */
+.home-events .home-events-row {
+  width: min(1300px, calc(100% - 40px));
+  margin: 0 auto 40px auto !important;
+
+  padding: 28px 20px;
+  border-radius: 22px;
+
+  background: rgba(000, 0, 0, 0.5);
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.30);
+
+  justify-content: center;
+}
+
+.home-events .home-events-row > .col-md-4 {
+  display: flex;
+  justify-content: center;
+}
+
+.home-events .home-events-row .card {
+  border-radius: 20px;
+  overflow: hidden;
+  border: none;
+
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.22);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+  width: 100%;
+  max-width: 360px;
+}
+
+.home-events .home-events-row .card:hover {
+  transform: scale(1.03);
+  box-shadow: 3px 6px 18px rgba(0, 0, 0, 0.30);
+}
+
+.home-events .home-events-row .card-img-top {
+  height: 210px;
+  object-fit: cover;
+}
+
+.home-events .home-events-row .card-body,
+.home-events .home-events-row .card-footer {
+  text-align: center;
+}
+
+.home-events .home-events-row .card-footer {
+  background: transparent;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  justify-content: center !important;
+  gap: 12px;
+}
+
+.home-events .home-events-row .btn {
+  border-radius: 12px;
+  font-weight: 700;
+  padding: 8px 14px;
+}
+
+.home-events .card {
+  background: #121212;
+  color: #f1f1f1;
+}
+
+.home-events .card-title {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.home-events .card-text {
+  color: #bdbdbd;
+}
+
+.home-events .card-footer {
+  background: #121212;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+
+.home-events .card-img-top {
+  filter: brightness(0.9) contrast(1.05);
+}
+
+.home-events .btn-primary:hover {
+  background-color: #a00000;
+}
+
+.home-events .card-footer strong {
+  color: #f5f5f5;
+}
+
+.home-events .card:hover {
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05),
+              0 8px 22px rgba(0, 0, 0, 0.6);
+}
+
+/* --------------------------------------------------------------------
+RODAPÉ
+-------------------------------------------------------------------- */
+footer {
+  position: sticky;
+  width: 100%;
+  z-index: 999;
+}
+
+.rodapé {
+  background-color: maroon;
+  padding: 10px;
+  text-align: center;
+  margin-top: 40px;
+  box-shadow: 0 -1px 7px #484948;
+  color: #BDB7AB;
+}
+
+.highlights {
+  color: white;
+}
+
+
+/* --------------------------------------------------------------------
+RESPONSIVIDADE
+-------------------------------------------------------------------- */
+@media (max-width: 992px) {
+  .cabeçalho {
+    gap: 10px;
+  }
+
+  .menu {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .home-events .home-events-row {
+    width: calc(100% - 24px);
+    padding: 22px 14px;
+  }
+
+  .home-events .card-img-top {
+    height: 190px;
+  }
+
+  .contact-section {
+    width: 85%;
+  }
+}
+
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  .menu a {
+    font-size: 0.95rem;
+    padding: 6px 8px;
+  }
+
+  .home-events .home-events-row {
+    border-radius: 18px;
+  }
+
+  .contact-section {
+    width: 90%;
+  }
+}
+
+
+@media (max-width: 576px) {
+  #logo {
+    width: 44px;
+  }
+
+  .menu {
+    gap: 6px;
+  }
+
+  .menu a {
+    font-size: 0.9rem;
+    padding: 5px 7px;
+  }
+
+  .home-events .card-img-top {
+    height: 170px;
+  }
+
+  footer .rodapé {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+}
+
+/* --------------------------------------------------------------------
+------------------------------ FIM ---------------------------
+-------------------------------------------------------------------- */

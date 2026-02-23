@@ -1,0 +1,117 @@
+/* --------------------------------------------------------------------
+LOGIN E REGISTO
+-------------------------------------------------------------------- */
+#caixa-registo, #caixa-login {
+  padding: 20px;
+  border-radius: 10px;
+  width: 70%;
+  color: #BDB7AB;
+}
+
+/* --------------------------------------------------------------------
+TABS
+-------------------------------------------------------------------- */
+#users-tab,
+#purchases-tab,
+#events-tab,
+#history-tab,
+#account-tab {
+  color: white;
+}
+
+#users-tab.active,
+#purchases-tab.active,
+#events-tab.active,
+#history-tab.active,
+#account-tab.active {
+  background-color: #BDB7AB;
+  color: maroon;
+}
+
+/* --------------------------------------------------------------------
+TABELAS
+-------------------------------------------------------------------- */
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+thead tr {
+  background-color: #BDB7AB;
+}
+
+/* --------------------------------------------------------------------
+STATUS COLORS
+-------------------------------------------------------------------- */
+.status-paid {
+  background-color: #14532d;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+}
+
+.status-pending {
+  background-color: #a16207;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+}
+
+.status-cancelled {
+  background-color: maroon;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+}
+
+/* --------------------------------------------------------------------
+RESPONSIVIDADE
+-------------------------------------------------------------------- */
+@media (max-width: 992px) {
+  #caixa-login,
+  #caixa-registo {
+    width: 85%;
+  }
+}
+
+
+@media (max-width: 768px) {
+  #caixa-login,
+  #caixa-registo {
+    width: 90%;
+  }
+}
+
+
+@media (max-width: 576px) {
+  #caixa-login,
+  #caixa-registo {
+    width: 94%;
+    padding: 16px;
+  }
+
+  td {
+    font-size: 0.92rem;
+    padding: 8px;
+  }
+
+  .status-paid,
+  .status-pending,
+  .status-cancelled {
+    font-size: 0.78rem;
+    padding: 3px 9px;
+  }
+}
+
+/* --------------------------------------------------------------------
+------------------------------ FIM ---------------------------
+-------------------------------------------------------------------- */

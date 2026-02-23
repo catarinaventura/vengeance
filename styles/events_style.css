@@ -1,0 +1,244 @@
+/* ---------------------------------------------------------
+PAGINAS DE EVENTOS
+--------------------------------------------------------- */
+.ev-page {
+  position: relative;
+  z-index: 1;
+}
+
+.ev-wrap {
+  width: min(1300px, 100%);
+}
+
+/* ---------------------------------------------------------
+EVENTS.PHP
+--------------------------------------------------------- */
+.ev-list .ev-grid {
+  padding: 28px 20px;
+  border-radius: 22px;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.30);
+  justify-content: center;
+  margin: 0;
+}
+
+.ev-card {
+  width: 100%;
+  max-width: 360px;
+  height: 100%;
+
+  border-radius: 20px;
+  overflow: hidden;
+
+  background: #121212;
+  color: #f1f1f1;
+
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.22);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.ev-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05),
+              0 10px 24px rgba(0, 0, 0, 0.65);
+}
+
+.ev-card__img {
+  height: 210px;
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(0.9) contrast(1.05);
+}
+
+.ev-card__body {
+  padding: 16px 16px 6px 16px;
+  text-align: center;
+  flex: 1;
+}
+
+.ev-card__title {
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.ev-card__meta {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.ev-date {
+  color: #bdbdbd;
+  font-size: 0.95rem;
+}
+
+.ev-card__desc {
+  color: #d8d8d8;
+  margin: 0;
+}
+
+.ev-card__footer {
+  padding: 12px 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.ev-price {
+  color: #f5f5f5;
+}
+
+.ev-pill {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  background-color: maroon;
+  color: white;
+}
+
+.ev-btn {
+  border-radius: 12px;
+  font-weight: 700;
+  padding: 8px 14px;
+  background-color: #800000;
+  border: none;
+}
+
+.ev-btn:hover {
+  background-color: #a00000;
+}
+
+/* ---------------------------------------------------------
+EVENT.PHP
+--------------------------------------------------------- */
+.ev-single .ev-single-wrap {
+  max-width: 780px;
+  margin: 0 auto;
+  border-radius: 20px;
+  overflow: hidden;
+
+  background: #121212;
+  color: #f1f1f1;
+
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.06),
+              0 10px 28px rgba(0, 0, 0, 0.65);
+}
+
+.ev-single .ev-single-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  filter: brightness(0.92) contrast(1.05);
+  margin-bottom: 20px;
+}
+
+.ev-single .ev-single-date {
+  color: #d0d0d0;
+}
+
+.ev-single .ev-single-desc {
+  color: #e6e6e6;
+}
+
+.ev-single .ev-single-price {
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+}
+
+.ev-muted {
+  color: #bdbdbd;
+}
+
+.ev-btn-buy {
+  background-color: #800000;
+  border: none;
+  border-radius: 12px;
+  font-weight: 700;
+}
+
+.ev-btn-buy:hover {
+  background-color: #a00000;
+}
+
+.ev-btn-back {
+  border-radius: 12px;
+  font-weight: 700;
+}
+
+/* --------------------------------------------------------------------
+RESPONSIVIDADE
+-------------------------------------------------------------------- */
+@media (max-width: 992px) {
+  .ev-list .ev-grid {
+    padding: 22px 14px;
+  }
+
+  .ev-card {
+    max-width: 100%;
+  }
+
+  .ev-card__img {
+    height: 190px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .ev-card__title {
+    font-size: 1.2rem;
+  }
+
+  .ev-card__body {
+    padding: 14px;
+  }
+
+  .ev-date {
+    font-size: 0.95rem;
+  }
+}
+
+
+@media (max-width: 576px) {
+  .ev-card {
+    border-radius: 16px;
+  }
+
+  .ev-card__img {
+    height: 170px;
+  }
+
+  .ev-card__footer {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .ev-btn {
+    width: 100%;
+  }
+
+  .ev-pill {
+    font-size: 0.8rem;
+  }
+
+  .ev-single .ev-single-price {
+    width: 100%;
+  }
+}
+
+/* --------------------------------------------------------------------
+------------------------------ FIM ---------------------------
+-------------------------------------------------------------------- */
